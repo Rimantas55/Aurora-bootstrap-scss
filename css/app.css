@@ -7787,6 +7787,10 @@ body {
     transition: border-bottom 0.2s;
     border-bottom: 1px solid white; }
 
+#showcase {
+  background: url("../images/main.jpeg") bottom center/cover no-repeat;
+  min-height: 750px; }
+
 @media (max-width: 768px) {
   .navbar {
     background: #1f1f1f; }

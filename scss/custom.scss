@@ -20,6 +20,11 @@ body {
     }
 }
 
+#showcase {
+    background: url("../images/main.jpeg") bottom center / cover no-repeat; 
+    min-height: 750px;
+}
+
 // FROM 768px and down add background
 @media (max-width: 768px) {
     .navbar {
