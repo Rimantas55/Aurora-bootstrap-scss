@@ -23,6 +23,9 @@ body {
 #showcase {
     background: url("../images/main.jpeg") bottom center / cover no-repeat; 
     min-height: 750px;
+    h1 {
+        font-family: "Questrial", sans-serif;
+    }
 }
 
 // FROM 768px and down add background
