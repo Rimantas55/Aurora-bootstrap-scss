@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#newsletter">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Book</a>
@@ -57,7 +57,7 @@
                     <p class="lead d-none d-md-block">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, tempora.
                     </p>
-                    <button id="book" class="btn btn-primary px-5">Book Now</button>
+                    <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">BOOK NOW</button>
             </div>
         </section>
 
@@ -241,6 +241,99 @@
                 </blockquote>
             </div>
         </section>
+
+        <!-- FOOTER --> 
+
+        <section id="newsletter" class="bg-dark">
+            <div class="container text-white text-center py-5">
+                <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                        <form action="" class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your Email" id="">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Join Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER NAV -->
+
+        <section id="footer" class="p-3 bg-secondary">
+            <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" class="nav-link text-white">EXPERIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" class="nav-link text-white">EXPLORE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#newsletter" class="nav-link text-white">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-white" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- MODALS -->
+
+        <div class="modal" id="bookingModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">New Booking</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please fill out the form below and we'll get back to you as soon as possible</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="adults">Number of Adults</label>
+                                <select class="form-control" id="adults">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="children">Number of Children</label>
+                                <select class="form-control" id="children">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="requests">Additional Requests</label>
+                                <textarea id="requests" rows="3" class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Submit Request</button>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- BOOTSTRAP  JS and JQUERY CDN -->
         <script
