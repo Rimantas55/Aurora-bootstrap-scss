@@ -51,6 +51,12 @@ body {
     }
 }
 
+#quotes {
+    i {
+        opacity: 0.3;
+    }
+}
+
 // FROM 768px and down add background
 @media (max-width: 768px) {
     .navbar {
